@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class SalarioFuncionario {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int numeroFuncionario = scanner.nextInt();
+        int horasTrabalhadas = scanner.nextInt();
+        double valorPorHora = scanner.nextDouble();
+        double salario = horasTrabalhadas * valorPorHora;
+        System.out.printf("Número do Funcionário: %d\n", numeroFuncionario);
+        System.out.printf("Salário: %.2f\n", salario);
+    }
+}
