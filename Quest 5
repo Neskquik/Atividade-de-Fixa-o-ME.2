@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class ValorPecas {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int codigoPeca1 = scanner.nextInt();
+        int numeroPecas1 = scanner.nextInt();
+        double valorPeca1 = scanner.nextDouble();
+        int codigoPeca2 = scanner.nextInt();
+        int numeroPecas2 = scanner.nextInt();
+        double valorPeca2 = scanner.nextDouble();
+        double valorTotal = (numeroPecas1 * valorPeca1) + (numeroPecas2 * valorPeca2);
+        System.out.printf("Valor a ser pago: %.2f\n", valorTotal);
+    }
+}
